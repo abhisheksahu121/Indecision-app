@@ -1,0 +1,40 @@
+//so now when modal first open we get a div inside of there with no class name.
+//sp now we target them using greaterthen sign which tells us that -> i only want to terget elements inside classname.
+
+
+.ReactModalPortal > div {    
+     opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity 200ms ease-in-out;
+}
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: $light-blue;
+    color: white;
+    max-width: 30rem;
+    outline: none;
+    padding: $l-size;
+    text-align: center;
+}
+
+.modal__title {
+   margin: 0 0 $m-size 0;
+}
+
+.modal__body {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0 0 $l-size 0;
+    word-break: break-all;  //so when we have a really really long words they get broken up into multiple lines. 
+}

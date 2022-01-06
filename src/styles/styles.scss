@@ -1,0 +1,9 @@
+@import './base/settings.scss';
+@import './base/base' ; 
+@import './components/add-option';
+@import './components/button.scss';
+@import './components/container';            //scss import syntax. this lets us provide the path to that partial
+@import './components/header'; 
+@import './components/modal';
+@import './components/options';
+@import './components/widget';                                
