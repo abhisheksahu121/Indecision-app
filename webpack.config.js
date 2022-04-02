@@ -22,7 +22,13 @@ module.exports = {
                 'style-loader',
                 'css-loader',
                 'sass-loader'  //sass-loader use to convert scss to css
-            ]       
+            ],
+            query: {
+                presets: [
+                    "env", 
+                    "react"
+                ]
+            }       
         }]
     },
     //devtool gets set equal to a string and here we can specify the type of source map we want
